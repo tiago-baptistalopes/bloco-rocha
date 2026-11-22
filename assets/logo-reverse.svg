@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" width="600" height="80" role="img" aria-label="BlocoRocha">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@800&amp;display=swap');</style>
+  <g fill="#FFFFFF">
+    <g transform="scale(1.25)"><polygon points="0,0 64,0 64,22 27,35 0,28"/><polygon points="0,35 27,42 64,29 64,64 0,64"/></g>
+    <text x="104" y="66" font-family="'Inter Tight', Inter, Helvetica, Arial, sans-serif" font-weight="800" font-size="80" letter-spacing="-3.6">BlocoRocha</text>
+  </g>
+</svg>

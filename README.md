@@ -5,7 +5,7 @@ Preparing a prospectus for a retail mutual fund investor. This is a multi-asset 
 
 1. Identify your target clientele, such as retail investors, wealth managers or institutional investors.Explain their objectives, horizon and attitude to risk.
 
-- Our **target client** is an ** EU-based retail investor** aged 30 to 45, with stable employment, a middle to upper-middle income and an emergency fund held outside their investment portfolio. The client already holds €10,000 in low- to moderate-risk ETFs and wants to allocate 25–30% of this portfolio (€2,500–€3,000) to a higher-risk strategy. The existing ETFs remain the stable core of their wealth, while our strategy is its growth-oriented component.
+- Our **target client** is an **EU-based retail investor** aged 30 to 45, with stable employment, a middle to upper-middle income and an emergency fund held outside their investment portfolio. The client already holds €10,000 in low- to moderate-risk ETFs and wants to allocate 25–30% of this portfolio (€2,500–€3,000) to a higher-risk strategy. The existing ETFs remain the stable core of their wealth, while our strategy is its growth-oriented component.
 
 - **Objectives.** The **client's goal** is **long-term wealth accumulation**. Depending on their personal plans, this capital may support financial independence and early retirement, help their children buy a first home, or simply grow their wealth. The **client seeks a higher long-term return than their current ETF portfolio** provides. Regular income and short-term capital preservation are not priorities for this allocation.
 

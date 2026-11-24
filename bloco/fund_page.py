@@ -186,7 +186,7 @@ used before its publication date. Real results would likely have been lower.</p>
     with c2:
         query = st.text_input('Filter list by keyword', placeholder='Type to search')
     h = fh[fh['date'] == when].join(securities, on='ticker')
-    table = pd.DataFrame({'Ticker': h['ticker'], 'Name': h['name'], 'Industry': h['industry'],
+    table = pd.DataFrame({'Ticker': h['ticker'], 'Name': h['name'], 'Sector': h['sector'], 'Industry': h['industry'],
                           'Region': h['region'].map({'US': 'United States', 'EU': 'Europe'}),
                           'Weight (%)': h['weight'] * 100, 'P/B ratio': h['price_to_book']}).sort_values('Weight (%)', ascending=False)
     if query:
@@ -197,7 +197,7 @@ used before its publication date. Real results would likely have been lower.</p>
 
     st.html('<div class="br-h2" style="margin-top:40px">Exposure Breakdowns</div>')
     latest_h = latest.join(securities, on='ticker')
-    for tab, col in zip(st.tabs(['Industry', 'Region']), ['industry', 'region']):
+    for tab, col in zip(st.tabs(['Sector', 'Industry', 'Region']), ['sector', 'industry', 'region']):
         with tab:
             w = latest_h.groupby(col)['weight'].sum().sort_values(ascending=False) * 100
             if len(w) > 16:

@@ -94,7 +94,12 @@ def load():
     securities = pd.read_csv(APP_DATA / 'securities.csv').set_index('ticker')
     classes = pd.read_csv(APP_DATA / 'classes.csv', index_col=0)
     meta = json.loads((APP_DATA / 'meta.json').read_text())
-    securities['industry'] = securities['sic'].map(industry)
+    if 'sic' in securities:
+        securities['industry'] = securities['sic'].map(industry)
+    for col in ('name', 'sector', 'industry'):
+        if col not in securities:
+            securities[col] = None
+    securities[['sector', 'industry']] = securities[['sector', 'industry']].fillna('Unclassified')
     return nav, holdings, securities, classes, meta
 
 

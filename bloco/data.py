@@ -33,14 +33,16 @@ FUNDS = {
         'code': 'GEMG',
         'path': 'global-equity-momentum-growth',
         'why': [
-            'Broad exposure to the full universe of large and mid-cap companies listed in dollars in the United States and in euros in Europe.',
-            'Equal weighting gives mid caps the same voice as mega caps, reducing concentration in the largest companies.',
-            'Monthly rebalancing back to equal weights keeps the portfolio disciplined, with dollar exposure hedged to euros.',
+            'Follows the strongest movers among growth stocks: each month, every company in the top quartile of 12-month price momentum that is also in the top half of the universe by price-to-book.',
+            'Rebuilt from scratch every month, with no holding period and no exit signals, so the portfolio moves with momentum as it shifts.',
+            'Equal weights across large and mid-cap companies listed in dollars in the United States and in euros in Europe, with dollar exposure hedged to euros.',
         ],
         'philosophy': (
-            'The Fund seeks long-term capital growth by holding every company in its investment universe at equal weight: all dollar-listed '
-            'United States companies and euro-listed European companies with a market value of at least €1.5 billion at launch that are still '
-            'trading. It rebalances monthly back to equal weights.'
+            'The Fund seeks long-term capital growth by following price momentum among growth companies. Each month it screens every '
+            'dollar-listed United States company and euro-listed European company with a market value of at least €1.5 billion at launch, '
+            'and holds every company that ranks in the top quartile of 12-month momentum (excluding the most recent month) and in the top '
+            'half by price-to-book. Holdings are equally weighted and the portfolio is rebuilt monthly. Unlike Global Equity Early Growth, '
+            'it applies no exit signals and does not keep a company once it leaves the screen.'
         ),
     },
 }

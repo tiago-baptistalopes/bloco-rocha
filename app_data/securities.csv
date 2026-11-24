@@ -1,729 +1,401 @@
 ticker,region,name,sic
-E1101.PA,EU,Iris Ember Group,3721
-E1153.PA,EU,Iris Ember Holdings,5961
-E1157.PA,EU,Meridian Granite Industries,4813
-E1161.PA,EU,Quartz Iris Group,3721
-E1165.PA,EU,Umber Kestrel Holdings,2000
-E1169.PA,EU,Yarrow Meridian Industries,4011
-E1177.PA,EU,Granite Quartz Holdings,3674
-E1181.PA,EU,Kestrel Summit Industries,5331
-E1185.PA,EU,Orchid Umber Group,2911
-E1201.PA,EU,Ember Cobalt Holdings,5331
-E1209.PA,EU,Meridian Granite Group,3674
-E1221.PA,EU,Yarrow Meridian Group,3577
-E1233.PA,EU,Kestrel Summit Group,4813
-E1237.PA,EU,Orchid Umber Holdings,6021
-E1241.PA,EU,Summit Willow Industries,4911
-E1245.PA,EU,Willow Yarrow Group,2834
-E1249.PA,EU,Alder Alder Holdings,8731
-E1261.PA,EU,Meridian Granite Holdings,4813
-E1265.PA,EU,Quartz Iris Industries,2000
-E1273.PA,EU,Yarrow Meridian Holdings,5331
-E1277.PA,EU,Cobalt Orchid Industries,2836
-E1281.PA,EU,Granite Quartz Group,7372
-E1285.PA,EU,Kestrel Summit Holdings,5961
-E1289.PA,EU,Orchid Umber Industries,3711
-E1297.PA,EU,Willow Yarrow Holdings,3577
-E1301.PA,EU,Alder Alder Industries,3577
-E1305.PA,EU,Ember Cobalt Group,7372
-E1309.PA,EU,Iris Ember Holdings,1311
-E1321.PA,EU,Umber Kestrel Holdings,1311
-E1325.PA,EU,Yarrow Meridian Industries,3711
-E1333.PA,EU,Granite Quartz Holdings,3572
-E1337.PA,EU,Kestrel Summit Industries,3312
-E1341.PA,EU,Orchid Umber Group,2911
-E1345.PA,EU,Summit Willow Holdings,6311
-E1353.PA,EU,Alder Alder Group,6311
-E1357.PA,EU,Ember Cobalt Holdings,4813
-E1361.PA,EU,Iris Ember Industries,3312
-E1365.PA,EU,Meridian Granite Group,5961
-E1373.PA,EU,Umber Kestrel Industries,3577
-E1377.PA,EU,Yarrow Meridian Group,3711
-E1385.PA,EU,Granite Quartz Industries,7372
-E1401.PA,EU,Willow Yarrow Group,6798
-E1413.PA,EU,Iris Ember Group,5331
-E1417.PA,EU,Meridian Granite Holdings,3841
-E1421.PA,EU,Quartz Iris Industries,2836
-E1433.PA,EU,Cobalt Orchid Industries,2836
-E1441.PA,EU,Kestrel Summit Holdings,5812
-E1449.PA,EU,Summit Willow Group,4512
-E1461.PA,EU,Ember Cobalt Group,3841
-E1473.PA,EU,Quartz Iris Group,2911
-E1489.PA,EU,Granite Quartz Holdings,2836
-E1497.PA,EU,Orchid Umber Group,2834
-E1501.PA,EU,Summit Willow Holdings,1311
-E1509.PA,EU,Alder Alder Group,6311
-E1521.PA,EU,Meridian Granite Group,3841
-E1529.PA,EU,Umber Kestrel Industries,3841
-E1533.PA,EU,Yarrow Meridian Group,5812
-E1537.PA,EU,Cobalt Orchid Holdings,3841
-E1541.PA,EU,Granite Quartz Industries,3721
-E1545.PA,EU,Kestrel Summit Group,3845
-E1549.PA,EU,Orchid Umber Holdings,2080
-E1557.PA,EU,Willow Yarrow Group,2000
-E1569.PA,EU,Iris Ember Group,2000
-E1573.PA,EU,Meridian Granite Holdings,4512
-E1589.PA,EU,Cobalt Orchid Industries,3312
-E1601.PA,EU,Orchid Umber Industries,4011
-E1617.PA,EU,Ember Cobalt Group,3312
-E1625.PA,EU,Meridian Granite Industries,3721
-E1633.PA,EU,Umber Kestrel Holdings,4011
-E1637.PA,EU,Yarrow Meridian Industries,2080
-E1641.PA,EU,Cobalt Orchid Group,8731
-E1645.PA,EU,Granite Quartz Holdings,3577
-E1649.PA,EU,Kestrel Summit Industries,2834
-E1657.PA,EU,Summit Willow Holdings,3674
-E1673.PA,EU,Iris Ember Industries,4512
-E1677.PA,EU,Meridian Granite Group,3721
-E1685.PA,EU,Umber Kestrel Industries,3841
-E1689.PA,EU,Yarrow Meridian Group,7373
-E1705.PA,EU,Orchid Umber Holdings,6021
-E1709.PA,EU,Summit Willow Industries,3572
-E1713.PA,EU,Willow Yarrow Group,6021
-E1721.PA,EU,Ember Cobalt Industries,4011
-E1725.PA,EU,Iris Ember Group,3841
-E1733.PA,EU,Quartz Iris Industries,2080
-E1745.PA,EU,Cobalt Orchid Industries,3577
-E1749.PA,EU,Granite Quartz Group,4813
-E1753.PA,EU,Kestrel Summit Holdings,3312
-E1761.PA,EU,Summit Willow Group,5812
-E1773.PA,EU,Ember Cobalt Group,5812
-E1777.PA,EU,Iris Ember Holdings,2000
-E1793.PA,EU,Yarrow Meridian Industries,3721
-E1797.PA,EU,Cobalt Orchid Group,7372
-T1,US,Alder Alder Holdings,3721
-T10,US,Juniper Lumen Therapeutics,2911
-T1000,US,Lumen Zephyr Therapeutics,4512
-T1002,US,Nimbus Nimbus Technologies,2080
-T1003,US,Orchid Umber Holdings,4813
-T1006,US,Redwood Pioneer Therapeutics,4813
-T1007,US,Summit Willow Industries,3572
-T101,US,Willow Yarrow Industries,5331
-T1010,US,Vertex Redwood Systems,3572
-T1012,US,Xenon Fjord Therapeutics,3572
-T1013,US,Yarrow Meridian Industries,2836
-T1019,US,Ember Cobalt Industries,3721
-T102,US,Xenon Fjord Technologies,3721
-T1022,US,Harbor Xenon Systems,6311
-T1023,US,Iris Ember Group,6311
-T1024,US,Juniper Lumen Therapeutics,2836
-T1025,US,Kestrel Summit Industries,6311
-T1026,US,Lumen Zephyr Technologies,2834
-T1027,US,Meridian Granite Holdings,2911
-T1029,US,Orchid Umber Group,3841
-T1030,US,Pioneer Brook Therapeutics,3571
-T1031,US,Quartz Iris Industries,4813
-T1032,US,Redwood Pioneer Technologies,4911
-T1033,US,Summit Willow Holdings,3312
-T1034,US,Tidal Delta Systems,4011
-T1035,US,Umber Kestrel Group,7373
-T1036,US,Vertex Redwood Therapeutics,3571
-T1037,US,Willow Yarrow Industries,3711
-T1041,US,Alder Alder Group,3572
-T1042,US,Brook Harbor Therapeutics,4512
-T1043,US,Cobalt Orchid Industries,3571
-T1044,US,Delta Vertex Technologies,5331
-T1045,US,Ember Cobalt Holdings,6798
-T1046,US,Fjord Juniper Systems,3571
-T1047,US,Granite Quartz Group,7372
-T1049,US,Iris Ember Industries,4911
-T105,US,Alder Alder Group,3841
-T1052,US,Lumen Zephyr Systems,4512
-T1053,US,Meridian Granite Group,6021
-T1054,US,Nimbus Nimbus Therapeutics,7372
-T1055,US,Orchid Umber Industries,3721
-T1057,US,Quartz Iris Holdings,7373
-T1058,US,Redwood Pioneer Systems,1311
-T1059,US,Summit Willow Group,3577
-T106,US,Brook Harbor Therapeutics,3312
-T1060,US,Tidal Delta Therapeutics,4813
-T1061,US,Umber Kestrel Industries,2000
-T1062,US,Vertex Redwood Technologies,3571
-T1064,US,Xenon Fjord Systems,5331
-T1065,US,Yarrow Meridian Group,3711
-T1067,US,Alder Alder Industries,7372
-T1069,US,Cobalt Orchid Holdings,2911
-T107,US,Cobalt Orchid Industries,3845
-T1070,US,Delta Vertex Systems,1311
-T1071,US,Ember Cobalt Group,3312
-T1072,US,Fjord Juniper Therapeutics,3721
-T1074,US,Harbor Xenon Technologies,2911
-T1076,US,Juniper Lumen Systems,6021
-T1078,US,Lumen Zephyr Therapeutics,6798
-T1079,US,Meridian Granite Industries,6021
-T108,US,Delta Vertex Technologies,5961
-T1080,US,Nimbus Nimbus Technologies,2000
-T1082,US,Pioneer Brook Systems,2836
-T1083,US,Quartz Iris Group,6311
-T1084,US,Redwood Pioneer Therapeutics,3721
-T1085,US,Summit Willow Industries,3572
-T1086,US,Tidal Delta Technologies,4512
-T1089,US,Willow Yarrow Group,6311
-T109,US,Ember Cobalt Holdings,2836
-T1091,US,Yarrow Meridian Industries,3312
-T1092,US,Zephyr Tidal Technologies,8731
-T1094,US,Brook Harbor Systems,2834
-T1097,US,Ember Cobalt Industries,3577
-T110,US,Fjord Juniper Systems,4512
-T1100,US,Harbor Xenon Systems,2080
-T112,US,Harbor Xenon Therapeutics,7373
-T115,US,Kestrel Summit Holdings,3841
-T123,US,Summit Willow Group,3571
-T124,US,Tidal Delta Therapeutics,4011
-T125,US,Umber Kestrel Industries,2000
-T127,US,Willow Yarrow Holdings,3674
-T128,US,Xenon Fjord Systems,4911
-T130,US,Zephyr Tidal Therapeutics,3841
-T131,US,Alder Alder Industries,2834
-T132,US,Brook Harbor Technologies,4512
-T134,US,Delta Vertex Systems,3572
-T136,US,Fjord Juniper Therapeutics,4813
-T138,US,Harbor Xenon Technologies,2000
-T139,US,Iris Ember Holdings,3572
-T140,US,Juniper Lumen Systems,3312
-T141,US,Kestrel Summit Group,3841
-T143,US,Meridian Granite Industries,5812
-T144,US,Nimbus Nimbus Technologies,3571
-T146,US,Pioneer Brook Systems,4512
-T147,US,Quartz Iris Group,7372
-T148,US,Redwood Pioneer Therapeutics,2911
-T149,US,Summit Willow Industries,3845
-T150,US,Tidal Delta Technologies,7372
-T151,US,Umber Kestrel Holdings,4911
-T153,US,Willow Yarrow Group,3674
-T154,US,Xenon Fjord Therapeutics,2836
-T156,US,Zephyr Tidal Technologies,3711
-T158,US,Brook Harbor Systems,5331
-T159,US,Cobalt Orchid Group,5812
-T160,US,Delta Vertex Therapeutics,3711
-T161,US,Ember Cobalt Industries,2080
-T162,US,Fjord Juniper Technologies,3571
-T164,US,Harbor Xenon Systems,1311
-T167,US,Kestrel Summit Industries,5961
-T168,US,Lumen Zephyr Technologies,6311
-T170,US,Nimbus Nimbus Systems,3845
-T171,US,Orchid Umber Group,5961
-T172,US,Pioneer Brook Therapeutics,2911
-T173,US,Quartz Iris Industries,3721
-T174,US,Redwood Pioneer Technologies,5961
-T175,US,Summit Willow Holdings,2080
-T178,US,Vertex Redwood Therapeutics,2836
-T180,US,Xenon Fjord Technologies,7372
-T181,US,Yarrow Meridian Holdings,4011
-T182,US,Zephyr Tidal Systems,3571
-T183,US,Alder Alder Group,2080
-T186,US,Delta Vertex Technologies,6311
-T187,US,Ember Cobalt Holdings,3572
-T189,US,Granite Quartz Group,8731
-T191,US,Iris Ember Industries,8731
-T194,US,Lumen Zephyr Systems,5331
-T195,US,Meridian Granite Group,2080
-T197,US,Orchid Umber Industries,2834
-T198,US,Pioneer Brook Technologies,4011
-T200,US,Redwood Pioneer Systems,2080
-T202,US,Tidal Delta Therapeutics,3571
-T203,US,Umber Kestrel Industries,2911
-T205,US,Willow Yarrow Holdings,5331
-T206,US,Xenon Fjord Systems,3711
-T208,US,Zephyr Tidal Therapeutics,3845
-T21,US,Umber Kestrel Group,3845
-T211,US,Cobalt Orchid Holdings,2834
-T212,US,Delta Vertex Systems,5331
-T213,US,Ember Cobalt Group,2911
-T214,US,Fjord Juniper Therapeutics,4813
-T216,US,Harbor Xenon Technologies,3721
-T217,US,Iris Ember Holdings,8731
-T220,US,Lumen Zephyr Therapeutics,7373
-T221,US,Meridian Granite Industries,3845
-T224,US,Pioneer Brook Systems,4911
-T226,US,Redwood Pioneer Therapeutics,3312
-T227,US,Summit Willow Industries,6021
-T231,US,Willow Yarrow Group,3711
-T233,US,Yarrow Meridian Industries,3721
-T234,US,Zephyr Tidal Technologies,2834
-T235,US,Alder Alder Holdings,3711
-T236,US,Brook Harbor Systems,3841
-T238,US,Delta Vertex Therapeutics,5331
-T239,US,Ember Cobalt Industries,2836
-T240,US,Fjord Juniper Technologies,3312
-T241,US,Granite Quartz Holdings,3721
-T242,US,Harbor Xenon Systems,4813
-T243,US,Iris Ember Group,4813
-T245,US,Kestrel Summit Industries,4011
-T247,US,Meridian Granite Holdings,2836
-T248,US,Nimbus Nimbus Systems,3845
-T249,US,Orchid Umber Group,3674
-T25,US,Yarrow Meridian Holdings,3312
-T250,US,Pioneer Brook Therapeutics,3721
-T251,US,Quartz Iris Industries,8731
-T252,US,Redwood Pioneer Technologies,2080
-T254,US,Tidal Delta Systems,5331
-T255,US,Umber Kestrel Group,1311
-T258,US,Xenon Fjord Technologies,6311
-T259,US,Yarrow Meridian Holdings,4813
-T26,US,Zephyr Tidal Systems,6021
-T260,US,Zephyr Tidal Systems,3572
-T263,US,Cobalt Orchid Industries,3845
-T268,US,Harbor Xenon Therapeutics,3845
-T269,US,Iris Ember Industries,2836
-T27,US,Alder Alder Group,3572
-T271,US,Kestrel Summit Holdings,4011
-T272,US,Lumen Zephyr Systems,8731
-T275,US,Orchid Umber Industries,3674
-T280,US,Tidal Delta Therapeutics,4011
-T281,US,Umber Kestrel Industries,4011
-T282,US,Vertex Redwood Technologies,7372
-T283,US,Willow Yarrow Holdings,4011
-T287,US,Alder Alder Industries,7372
-T288,US,Brook Harbor Technologies,5331
-T289,US,Cobalt Orchid Holdings,3721
-T290,US,Delta Vertex Systems,6798
-T292,US,Fjord Juniper Therapeutics,5812
-T294,US,Harbor Xenon Technologies,3711
-T295,US,Iris Ember Holdings,3845
-T296,US,Juniper Lumen Systems,6798
-T297,US,Kestrel Summit Group,8731
-T300,US,Nimbus Nimbus Technologies,8731
-T302,US,Pioneer Brook Systems,4813
-T303,US,Quartz Iris Group,7373
-T304,US,Redwood Pioneer Therapeutics,4011
-T305,US,Summit Willow Industries,3845
-T306,US,Tidal Delta Technologies,8731
-T307,US,Umber Kestrel Holdings,7373
-T309,US,Willow Yarrow Group,4911
-T31,US,Ember Cobalt Holdings,4011
-T311,US,Yarrow Meridian Industries,2834
-T312,US,Zephyr Tidal Technologies,2836
-T313,US,Alder Alder Holdings,3845
-T315,US,Cobalt Orchid Group,2834
-T318,US,Fjord Juniper Technologies,3845
-T320,US,Harbor Xenon Systems,1311
-T323,US,Kestrel Summit Industries,7373
-T324,US,Lumen Zephyr Technologies,2911
-T327,US,Orchid Umber Group,7372
-T329,US,Quartz Iris Industries,6021
-T330,US,Redwood Pioneer Technologies,3841
-T331,US,Summit Willow Holdings,5331
-T335,US,Willow Yarrow Industries,2911
-T339,US,Alder Alder Group,3841
-T34,US,Harbor Xenon Therapeutics,5812
-T342,US,Delta Vertex Technologies,2911
-T344,US,Fjord Juniper Systems,4512
-T345,US,Granite Quartz Group,5961
-T348,US,Juniper Lumen Technologies,1311
-T349,US,Kestrel Summit Holdings,7373
-T351,US,Meridian Granite Group,4512
-T352,US,Nimbus Nimbus Therapeutics,2911
-T353,US,Orchid Umber Industries,4512
-T355,US,Quartz Iris Holdings,3572
-T356,US,Redwood Pioneer Systems,1311
-T362,US,Xenon Fjord Systems,4011
-T365,US,Alder Alder Industries,1311
-T366,US,Brook Harbor Technologies,5812
-T368,US,Delta Vertex Systems,3674
-T369,US,Ember Cobalt Group,3845
-T373,US,Iris Ember Holdings,3674
-T375,US,Kestrel Summit Group,4011
-T376,US,Lumen Zephyr Therapeutics,3572
-T378,US,Nimbus Nimbus Technologies,2836
-T380,US,Pioneer Brook Systems,8731
-T382,US,Redwood Pioneer Therapeutics,3721
-T384,US,Tidal Delta Technologies,3572
-T388,US,Xenon Fjord Therapeutics,7373
-T39,US,Meridian Granite Group,6021
-T390,US,Zephyr Tidal Technologies,3312
-T391,US,Alder Alder Holdings,2911
-T392,US,Brook Harbor Systems,3572
-T394,US,Delta Vertex Therapeutics,2080
-T395,US,Ember Cobalt Industries,4813
-T396,US,Fjord Juniper Technologies,2000
-T397,US,Granite Quartz Holdings,3572
-T398,US,Harbor Xenon Systems,5961
-T400,US,Juniper Lumen Therapeutics,1311
-T402,US,Lumen Zephyr Technologies,4512
-T403,US,Meridian Granite Holdings,3721
-T405,US,Orchid Umber Group,3721
-T408,US,Redwood Pioneer Technologies,7372
-T409,US,Summit Willow Holdings,3845
-T413,US,Willow Yarrow Industries,8731
-T414,US,Xenon Fjord Technologies,3312
-T418,US,Brook Harbor Therapeutics,3721
-T419,US,Cobalt Orchid Industries,3571
-T421,US,Ember Cobalt Holdings,8731
-T422,US,Fjord Juniper Systems,3571
-T423,US,Granite Quartz Group,6798
-T425,US,Iris Ember Industries,3674
-T426,US,Juniper Lumen Technologies,3841
-T429,US,Meridian Granite Group,3572
-T43,US,Quartz Iris Holdings,4911
-T431,US,Orchid Umber Industries,2836
-T433,US,Quartz Iris Holdings,2836
-T434,US,Redwood Pioneer Systems,3572
-T436,US,Tidal Delta Therapeutics,4512
-T437,US,Umber Kestrel Industries,3711
-T438,US,Vertex Redwood Technologies,3841
-T439,US,Willow Yarrow Holdings,5961
-T440,US,Xenon Fjord Systems,6311
-T442,US,Zephyr Tidal Therapeutics,4512
-T443,US,Alder Alder Industries,8731
-T444,US,Brook Harbor Technologies,4813
-T445,US,Cobalt Orchid Holdings,6311
-T448,US,Fjord Juniper Therapeutics,5331
-T45,US,Summit Willow Group,3577
-T450,US,Harbor Xenon Technologies,4011
-T451,US,Iris Ember Holdings,5331
-T453,US,Kestrel Summit Group,5331
-T455,US,Meridian Granite Industries,5331
-T458,US,Pioneer Brook Systems,3841
-T459,US,Quartz Iris Group,3841
-T46,US,Tidal Delta Therapeutics,1311
-T460,US,Redwood Pioneer Therapeutics,5331
-T464,US,Vertex Redwood Systems,3312
-T465,US,Willow Yarrow Group,6021
-T466,US,Xenon Fjord Therapeutics,7373
-T468,US,Zephyr Tidal Technologies,7373
-T469,US,Alder Alder Holdings,2836
-T470,US,Brook Harbor Systems,7373
-T475,US,Granite Quartz Holdings,4911
-T477,US,Iris Ember Group,3674
-T478,US,Juniper Lumen Therapeutics,3841
-T479,US,Kestrel Summit Industries,3841
-T480,US,Lumen Zephyr Technologies,6798
-T481,US,Meridian Granite Holdings,5961
-T482,US,Nimbus Nimbus Systems,7372
-T483,US,Orchid Umber Group,3721
-T484,US,Pioneer Brook Therapeutics,3312
-T485,US,Quartz Iris Industries,3841
-T486,US,Redwood Pioneer Technologies,3845
-T487,US,Summit Willow Holdings,7373
-T489,US,Umber Kestrel Group,7372
-T490,US,Vertex Redwood Therapeutics,3674
-T491,US,Willow Yarrow Industries,3572
-T494,US,Zephyr Tidal Systems,3674
-T496,US,Brook Harbor Therapeutics,7373
-T497,US,Cobalt Orchid Industries,2911
-T50,US,Xenon Fjord Systems,6311
-T500,US,Fjord Juniper Systems,4911
-T501,US,Granite Quartz Group,3571
-T502,US,Harbor Xenon Therapeutics,2911
-T503,US,Iris Ember Industries,3841
-T507,US,Meridian Granite Group,4813
-T508,US,Nimbus Nimbus Therapeutics,3312
-T509,US,Orchid Umber Industries,5812
-T512,US,Redwood Pioneer Systems,4813
-T514,US,Tidal Delta Therapeutics,6021
-T515,US,Umber Kestrel Industries,4911
-T516,US,Vertex Redwood Technologies,3711
-T517,US,Willow Yarrow Holdings,4011
-T518,US,Xenon Fjord Systems,3721
-T520,US,Zephyr Tidal Therapeutics,2834
-T522,US,Brook Harbor Technologies,3571
-T523,US,Cobalt Orchid Holdings,5961
-T524,US,Delta Vertex Systems,7372
-T527,US,Granite Quartz Industries,2000
-T528,US,Harbor Xenon Technologies,8731
-T530,US,Juniper Lumen Systems,3721
-T533,US,Meridian Granite Industries,3577
-T534,US,Nimbus Nimbus Technologies,4911
-T536,US,Pioneer Brook Systems,4911
-T538,US,Redwood Pioneer Therapeutics,3572
-T539,US,Summit Willow Industries,3577
-T540,US,Tidal Delta Technologies,3312
-T542,US,Vertex Redwood Systems,3312
-T543,US,Willow Yarrow Group,3841
-T544,US,Xenon Fjord Therapeutics,4011
-T545,US,Yarrow Meridian Industries,7373
-T546,US,Zephyr Tidal Technologies,3721
-T547,US,Alder Alder Holdings,3711
-T549,US,Cobalt Orchid Group,6021
-T550,US,Delta Vertex Therapeutics,5961
-T551,US,Ember Cobalt Industries,3577
-T552,US,Fjord Juniper Technologies,6798
-T553,US,Granite Quartz Holdings,5961
-T555,US,Iris Ember Group,8731
-T556,US,Juniper Lumen Therapeutics,8731
-T557,US,Kestrel Summit Industries,3841
-T558,US,Lumen Zephyr Technologies,8731
-T56,US,Delta Vertex Systems,4011
-T562,US,Pioneer Brook Therapeutics,6798
-T564,US,Redwood Pioneer Technologies,1311
-T567,US,Umber Kestrel Group,3577
-T568,US,Vertex Redwood Therapeutics,2836
-T570,US,Xenon Fjord Technologies,3845
-T575,US,Cobalt Orchid Industries,5331
-T576,US,Delta Vertex Technologies,5331
-T579,US,Granite Quartz Group,3571
-T580,US,Harbor Xenon Therapeutics,3312
-T582,US,Juniper Lumen Technologies,4512
-T583,US,Kestrel Summit Holdings,3845
-T584,US,Lumen Zephyr Systems,2000
-T585,US,Meridian Granite Group,7372
-T586,US,Nimbus Nimbus Therapeutics,5961
-T588,US,Pioneer Brook Technologies,8731
-T591,US,Summit Willow Group,4011
-T592,US,Tidal Delta Therapeutics,6021
-T595,US,Willow Yarrow Holdings,6798
-T596,US,Xenon Fjord Systems,4011
-T597,US,Yarrow Meridian Group,4813
-T598,US,Zephyr Tidal Therapeutics,7372
-T601,US,Cobalt Orchid Holdings,4512
-T606,US,Harbor Xenon Technologies,5331
-T608,US,Juniper Lumen Systems,3577
-T61,US,Iris Ember Holdings,3674
-T611,US,Meridian Granite Industries,8731
-T612,US,Nimbus Nimbus Technologies,6311
-T614,US,Pioneer Brook Systems,6021
-T616,US,Redwood Pioneer Therapeutics,3571
-T617,US,Summit Willow Industries,2836
-T619,US,Umber Kestrel Holdings,3577
-T62,US,Juniper Lumen Systems,5331
-T620,US,Vertex Redwood Systems,5812
-T625,US,Alder Alder Holdings,3841
-T627,US,Cobalt Orchid Group,5961
-T63,US,Kestrel Summit Group,2080
-T630,US,Fjord Juniper Technologies,3711
-T634,US,Juniper Lumen Therapeutics,5331
-T635,US,Kestrel Summit Industries,3721
-T637,US,Meridian Granite Holdings,5961
-T638,US,Nimbus Nimbus Systems,4813
-T639,US,Orchid Umber Group,5812
-T641,US,Quartz Iris Industries,6798
-T645,US,Umber Kestrel Group,3711
-T646,US,Vertex Redwood Therapeutics,3721
-T65,US,Meridian Granite Industries,3312
-T651,US,Alder Alder Group,6311
-T653,US,Cobalt Orchid Industries,6798
-T654,US,Delta Vertex Technologies,3572
-T656,US,Fjord Juniper Systems,3845
-T661,US,Kestrel Summit Holdings,7373
-T662,US,Lumen Zephyr Systems,3571
-T664,US,Nimbus Nimbus Therapeutics,1311
-T665,US,Orchid Umber Industries,4911
-T668,US,Redwood Pioneer Systems,3674
-T669,US,Summit Willow Group,3572
-T67,US,Orchid Umber Holdings,5331
-T670,US,Tidal Delta Therapeutics,3312
-T674,US,Xenon Fjord Systems,4011
-T675,US,Yarrow Meridian Group,4512
-T676,US,Zephyr Tidal Therapeutics,2911
-T677,US,Alder Alder Industries,2834
-T680,US,Delta Vertex Systems,3674
-T683,US,Granite Quartz Industries,6798
-T684,US,Harbor Xenon Technologies,6021
-T685,US,Iris Ember Holdings,1311
-T687,US,Kestrel Summit Group,3711
-T689,US,Meridian Granite Industries,4011
-T69,US,Quartz Iris Group,3571
-T690,US,Nimbus Nimbus Technologies,3571
-T691,US,Orchid Umber Holdings,7372
-T692,US,Pioneer Brook Systems,7372
-T694,US,Redwood Pioneer Therapeutics,3674
-T695,US,Summit Willow Industries,2834
-T696,US,Tidal Delta Technologies,4512
-T697,US,Umber Kestrel Holdings,4512
-T699,US,Willow Yarrow Group,3571
-T70,US,Redwood Pioneer Therapeutics,7373
-T700,US,Xenon Fjord Therapeutics,1311
-T702,US,Zephyr Tidal Technologies,3571
-T703,US,Alder Alder Holdings,3674
-T704,US,Brook Harbor Systems,1311
-T705,US,Cobalt Orchid Group,5812
-T709,US,Granite Quartz Holdings,2834
-T711,US,Iris Ember Group,2836
-T712,US,Juniper Lumen Therapeutics,3841
-T713,US,Kestrel Summit Industries,7373
-T715,US,Meridian Granite Holdings,2836
-T716,US,Nimbus Nimbus Systems,3312
-T717,US,Orchid Umber Group,3721
-T720,US,Redwood Pioneer Technologies,2080
-T721,US,Summit Willow Holdings,3845
-T723,US,Umber Kestrel Group,1311
-T725,US,Willow Yarrow Industries,2911
-T727,US,Yarrow Meridian Holdings,3577
-T729,US,Alder Alder Group,8731
-T73,US,Umber Kestrel Holdings,2834
-T730,US,Brook Harbor Therapeutics,6311
-T731,US,Cobalt Orchid Industries,4813
-T736,US,Harbor Xenon Therapeutics,7373
-T737,US,Iris Ember Industries,2911
-T738,US,Juniper Lumen Technologies,5961
-T74,US,Vertex Redwood Systems,6311
-T740,US,Lumen Zephyr Systems,5961
-T741,US,Meridian Granite Group,8731
-T743,US,Orchid Umber Industries,2080
-T744,US,Pioneer Brook Technologies,3841
-T746,US,Redwood Pioneer Systems,7372
-T748,US,Tidal Delta Therapeutics,2911
-T749,US,Umber Kestrel Industries,4911
-T75,US,Willow Yarrow Group,6311
-T750,US,Vertex Redwood Technologies,3674
-T751,US,Willow Yarrow Holdings,5812
-T752,US,Xenon Fjord Systems,3312
-T753,US,Yarrow Meridian Group,3711
-T754,US,Zephyr Tidal Therapeutics,7372
-T756,US,Brook Harbor Technologies,2834
-T757,US,Cobalt Orchid Holdings,3845
-T759,US,Ember Cobalt Group,5812
-T76,US,Xenon Fjord Therapeutics,1311
-T760,US,Fjord Juniper Therapeutics,7372
-T761,US,Granite Quartz Industries,6021
-T762,US,Harbor Xenon Technologies,3312
-T763,US,Iris Ember Holdings,4011
-T765,US,Kestrel Summit Group,4512
-T766,US,Lumen Zephyr Therapeutics,5331
-T767,US,Meridian Granite Industries,5331
-T769,US,Orchid Umber Holdings,5812
-T77,US,Yarrow Meridian Industries,3572
-T772,US,Redwood Pioneer Therapeutics,2836
-T773,US,Summit Willow Industries,3841
-T775,US,Umber Kestrel Holdings,3577
-T778,US,Xenon Fjord Therapeutics,2836
-T779,US,Yarrow Meridian Industries,5812
-T780,US,Zephyr Tidal Technologies,3312
-T781,US,Alder Alder Holdings,5961
-T782,US,Brook Harbor Systems,7373
-T783,US,Cobalt Orchid Group,7373
-T784,US,Delta Vertex Therapeutics,2836
-T785,US,Ember Cobalt Industries,8731
-T787,US,Granite Quartz Holdings,2836
-T79,US,Alder Alder Holdings,4813
-T791,US,Kestrel Summit Industries,4911
-T793,US,Meridian Granite Holdings,4911
-T795,US,Orchid Umber Group,3571
-T796,US,Pioneer Brook Therapeutics,7373
-T797,US,Quartz Iris Industries,3721
-T798,US,Redwood Pioneer Technologies,2080
-T8,US,Harbor Xenon Systems,3571
-T80,US,Brook Harbor Systems,7372
-T801,US,Umber Kestrel Group,2000
-T803,US,Willow Yarrow Industries,4512
-T804,US,Xenon Fjord Technologies,3721
-T805,US,Yarrow Meridian Holdings,3841
-T806,US,Zephyr Tidal Systems,4512
-T807,US,Alder Alder Group,3572
-T808,US,Brook Harbor Therapeutics,5331
-T809,US,Cobalt Orchid Industries,3711
-T813,US,Granite Quartz Group,2836
-T814,US,Harbor Xenon Therapeutics,4813
-T818,US,Lumen Zephyr Systems,4813
-T820,US,Nimbus Nimbus Therapeutics,3312
-T823,US,Quartz Iris Holdings,4011
-T827,US,Umber Kestrel Industries,5812
-T83,US,Ember Cobalt Industries,3577
-T830,US,Xenon Fjord Systems,1311
-T831,US,Yarrow Meridian Group,7373
-T832,US,Zephyr Tidal Therapeutics,5812
-T835,US,Cobalt Orchid Holdings,3845
-T836,US,Delta Vertex Systems,4813
-T837,US,Ember Cobalt Group,3845
-T838,US,Fjord Juniper Therapeutics,3845
-T839,US,Granite Quartz Industries,2911
-T84,US,Fjord Juniper Technologies,8731
-T842,US,Juniper Lumen Systems,4512
-T843,US,Kestrel Summit Group,3674
-T845,US,Meridian Granite Industries,7373
-T846,US,Nimbus Nimbus Technologies,3577
-T847,US,Orchid Umber Holdings,7372
-T849,US,Quartz Iris Group,4813
-T85,US,Granite Quartz Holdings,5961
-T851,US,Summit Willow Industries,2836
-T853,US,Umber Kestrel Holdings,2834
-T856,US,Xenon Fjord Therapeutics,5812
-T857,US,Yarrow Meridian Industries,3312
-T858,US,Zephyr Tidal Technologies,4911
-T859,US,Alder Alder Holdings,2911
-T860,US,Brook Harbor Systems,4512
-T861,US,Cobalt Orchid Group,2836
-T862,US,Delta Vertex Therapeutics,7372
-T863,US,Ember Cobalt Industries,3674
-T864,US,Fjord Juniper Technologies,7373
-T866,US,Harbor Xenon Systems,3312
-T867,US,Iris Ember Group,1311
-T868,US,Juniper Lumen Therapeutics,4512
-T87,US,Iris Ember Group,1311
-T870,US,Lumen Zephyr Technologies,2911
-T872,US,Nimbus Nimbus Systems,3674
-T873,US,Orchid Umber Group,3841
-T874,US,Pioneer Brook Therapeutics,3841
-T879,US,Umber Kestrel Group,3721
-T88,US,Juniper Lumen Therapeutics,6021
-T880,US,Vertex Redwood Therapeutics,2836
-T883,US,Yarrow Meridian Holdings,4512
-T884,US,Zephyr Tidal Systems,2080
-T885,US,Alder Alder Group,3721
-T887,US,Cobalt Orchid Industries,4512
-T888,US,Delta Vertex Technologies,6021
-T89,US,Kestrel Summit Industries,6311
-T893,US,Iris Ember Industries,7372
-T894,US,Juniper Lumen Technologies,3841
-T896,US,Lumen Zephyr Systems,7373
-T897,US,Meridian Granite Group,6311
-T90,US,Lumen Zephyr Technologies,4813
-T901,US,Quartz Iris Holdings,4911
-T903,US,Summit Willow Group,4512
-T904,US,Tidal Delta Therapeutics,6021
-T905,US,Umber Kestrel Industries,5812
-T906,US,Vertex Redwood Technologies,1311
-T907,US,Willow Yarrow Holdings,3312
-T908,US,Xenon Fjord Systems,6021
-T910,US,Zephyr Tidal Therapeutics,1311
-T911,US,Alder Alder Industries,6021
-T912,US,Brook Harbor Technologies,3312
-T913,US,Cobalt Orchid Holdings,1311
-T914,US,Delta Vertex Systems,3571
-T915,US,Ember Cobalt Group,3571
-T919,US,Iris Ember Holdings,1311
-T923,US,Meridian Granite Industries,3721
-T926,US,Pioneer Brook Systems,1311
-T928,US,Redwood Pioneer Therapeutics,3577
-T929,US,Summit Willow Industries,4911
-T932,US,Vertex Redwood Systems,4813
-T933,US,Willow Yarrow Group,2834
-T934,US,Xenon Fjord Therapeutics,3312
-T935,US,Yarrow Meridian Industries,4911
-T936,US,Zephyr Tidal Technologies,2080
-T937,US,Alder Alder Holdings,1311
-T94,US,Pioneer Brook Therapeutics,7372
-T940,US,Delta Vertex Therapeutics,2080
-T942,US,Fjord Juniper Technologies,1311
-T943,US,Granite Quartz Holdings,3674
-T945,US,Iris Ember Group,6798
-T946,US,Juniper Lumen Therapeutics,6311
-T947,US,Kestrel Summit Industries,8731
-T948,US,Lumen Zephyr Technologies,3571
-T949,US,Meridian Granite Holdings,2000
-T95,US,Quartz Iris Industries,4512
-T951,US,Orchid Umber Group,3572
-T954,US,Redwood Pioneer Technologies,4512
-T955,US,Summit Willow Holdings,3845
-T956,US,Tidal Delta Systems,2911
-T958,US,Vertex Redwood Therapeutics,8731
-T959,US,Willow Yarrow Industries,4813
-T961,US,Yarrow Meridian Holdings,4512
-T962,US,Zephyr Tidal Systems,5961
-T964,US,Brook Harbor Therapeutics,3845
-T966,US,Delta Vertex Technologies,3571
-T967,US,Ember Cobalt Holdings,4512
-T968,US,Fjord Juniper Systems,2911
-T97,US,Summit Willow Holdings,3572
-T970,US,Harbor Xenon Therapeutics,2911
-T971,US,Iris Ember Industries,6021
-T974,US,Lumen Zephyr Systems,3312
-T975,US,Meridian Granite Group,4911
-T978,US,Pioneer Brook Technologies,4813
-T979,US,Quartz Iris Holdings,3845
-T980,US,Redwood Pioneer Systems,6021
-T981,US,Summit Willow Group,5812
-T983,US,Umber Kestrel Industries,3674
-T984,US,Vertex Redwood Technologies,3721
-T985,US,Willow Yarrow Holdings,4512
-T986,US,Xenon Fjord Systems,3577
-T988,US,Zephyr Tidal Therapeutics,3841
-T989,US,Alder Alder Industries,2834
-T992,US,Delta Vertex Systems,3674
-T993,US,Ember Cobalt Group,5331
-T994,US,Fjord Juniper Therapeutics,3312
-T995,US,Granite Quartz Industries,5961
-T996,US,Harbor Xenon Technologies,5961
-T997,US,Iris Ember Holdings,3571
-T998,US,Juniper Lumen Systems,3577
+A,US,,
+ABT,US,,
+AC.PA,EU,,
+ACS.MC,EU,,
+ADBE,US,,
+ADI,US,,
+ADM,US,,
+ADP,US,,
+ADSK,US,,
+AEE,US,,
+AEP,US,,
+AES,US,,
+AFL,US,,
+AGFB.BR,EU,,
+AI.PA,EU,,
+AIG,US,,
+AIR.PA,EU,,
+AIZ,US,,
+AKZA.AS,EU,,
+ALL,US,,
+AMAT,US,,
+AMD,US,,
+AMG,US,,
+AMGN,US,,
+AMT,US,,
+AN,US,,
+ANA.MC,EU,,
+ANF,US,,
+APA,US,,
+APD,US,,
+ARO.DU,EU,,
+ARW,US,,
+ASB,US,,
+ASML.AS,EU,,
+ATO.PA,EU,,
+AVY,US,,
+AXP,US,,
+AZO,US,,
+BA,US,,
+BAC,US,,
+BAS.DE,EU,,
+BAX,US,,
+BAYN.DE,EU,,
+BBWI,US,,
+BBY,US,,
+BC,US,,
+BDX,US,,
+BEI.DE,EU,,
+BEN,US,,
+BFH,US,,
+BG,US,,
+BIIB,US,,
+BLK,US,,
+BMW.DE,EU,,
+BMY,US,,
+BN.PA,EU,,
+BNY,US,,
+BPOP,US,,
+BSX,US,,
+BXP,US,,
+BYD,US,,
+C,US,,
+CA.PA,EU,,
+CAG,US,,
+CAH,US,,
+CAP.PA,EU,,
+CAR,US,,
+CAT,US,,
+CCI,US,,
+CCK,US,,
+CDI.PA,EU,,
+CDNS,US,,
+CI,US,,
+CIEN,US,,
+CINF,US,,
+CL,US,,
+CLX,US,,
+CMCSA,US,,
+CNA,US,,
+CNO,US,,
+CO.PA,EU,,
+COF,US,,
+CON.DE,EU,,
+COP,US,,
+COST,US,,
+CPB,US,,
+CRL,US,,
+CSCO,US,,
+CVS,US,,
+CVX,US,,
+CYH,US,,
+D,US,,
+DD,US,,
+DE,US,,
+DEC.PA,EU,,
+DGX,US,,
+DHI,US,,
+DHL.DE,EU,,
+DHR,US,,
+DIS,US,,
+DOV,US,,
+DOX,US,,
+DRI,US,,
+DTE,US,,
+DTE.DE,EU,,
+DUK,US,,
+DVA,US,,
+DVN,US,,
+DXC,US,,
+EBAY,US,,
+EBK.DE,EU,,
+ECL,US,,
+ED,US,,
+EDP.LS,EU,,
+EFX,US,,
+EHC,US,,
+EIX,US,,
+EL,US,,
+EL.PA,EU,,
+ELE.MC,EU,,
+ELV,US,,
+EMR,US,,
+EN.PA,EU,,
+ENEL.MI,EU,,
+ENI.MI,EU,,
+EOAN.DE,EU,,
+EPC,US,,
+ESINQ,US,,
+ETR,US,,
+EXC,US,,
+EXPD,US,,
+F,US,,
+FBP,US,,
+FCC.MC,EU,,
+FCX,US,,
+FDX,US,,
+FE,US,,
+FER.MC,EU,,
+FHN,US,,
+FICO,US,,
+FITB,US,,
+FLEX,US,,
+FLG,US,,
+FMCC,US,,
+FNMA,US,,
+FORTUM.HE,EU,,
+FRA.DE,EU,,
+GAP,US,,
+GD,US,,
+GE,US,,
+GEN,US,,
+GHC,US,,
+GILD,US,,
+GIS,US,,
+GL,US,,
+GLW,US,,
+GNW,US,,
+GPC,US,,
+GR,US,,
+GS,US,,
+GT,US,,
+GWW,US,,
+HAL,US,,
+HBAN,US,,
+HD,US,,
+HEI.DE,EU,,
+HEIA.AS,EU,,
+HEIO.AS,EU,,
+HHS,US,,
+HIG,US,,
+HO.PA,EU,,
+HOG,US,,
+HON,US,,
+HOV,US,,
+HPQ,US,,
+HST,US,,
+HSY,US,,
+HTO.AT,EU,,
+HUM,US,,
+IBE.MC,EU,,
+IBM,US,,
+IFF,US,,
+IFX.DE,EU,,
+INTC,US,,
+INTU,US,,
+IP,US,,
+ITW,US,,
+IVZ,US,,
+JBL,US,,
+JNJ,US,,
+JOE,US,,
+JPM,US,,
+KER.PA,EU,,
+KEY,US,,
+KMB,US,,
+KO,US,,
+KPN.AS,EU,,
+KR,US,,
+KRZ.IR,EU,,
+KSS,US,,
+L,US,,
+LAMR,US,,
+LEE,US,,
+LEN,US,,
+LH,US,,
+LHA.DE,EU,,
+LLY,US,,
+LMT,US,,
+LNC,US,,
+LNWO,US,,
+LOCAL.PA,EU,,
+LOW,US,,
+LPX,US,,
+LUV,US,,
+LVS,US,,
+M,US,,
+MAN,US,,
+MAR,US,,
+MAS,US,,
+MAT,US,,
+MBG.DE,EU,,
+MBI,US,,
+MC.PA,EU,,
+MCD,US,,
+MCK,US,,
+MCO,US,,
+MDLZ,US,,
+MET,US,,
+MF.PA,EU,,
+MFEB.MI,EU,,
+MGM,US,,
+MHK,US,,
+MKL,US,,
+MMB.PA,EU,,
+MMM,US,,
+MO,US,,
+MOS,US,,
+MRK,US,,
+MRSH,US,,
+MRVL,US,,
+MS,US,,
+MSFT,US,,
+MSI,US,,
+MTB,US,,
+MTCH,US,,
+MTG,US,,
+MU,US,,
+NEM,US,,
+NK.PA,EU,,
+NKE,US,,
+NKTR,US,,
+NOC,US,,
+NOKIA.HE,EU,,
+NSC,US,,
+NTAP,US,,
+NTGY.MC,EU,,
+NTRS,US,,
+NUE,US,,
+NVR,US,,
+NWL,US,,
+NYT,US,,
+OBEL.BR,EU,,
+OI,US,,
+OMC,US,,
+OR.PA,EU,,
+ORA.PA,EU,,
+ORCL,US,,
+OUT1V.HE,EU,,
+OVV,US,,
+OXY,US,,
+PAYX,US,,
+PBI,US,,
+PCG,US,,
+PEG,US,,
+PEP,US,,
+PFE,US,,
+PFG,US,,
+PG,US,,
+PGR,US,,
+PH,US,,
+PHIA.AS,EU,,
+PHM,US,,
+PHM.MC,EU,,
+PHR.LS,EU,,
+PLD,US,,
+PNC,US,,
+PNL.AS,EU,,
+PPC.AT,EU,,
+PPG,US,,
+PRDO,US,,
+PROX.BR,EU,,
+PRS.MC,EU,,
+PRU,US,,
+PSA,US,,
+PTC,US,,
+PTEN,US,,
+PUB.PA,EU,,
+QCOM,US,,
+RBBN,US,,
+RCL,US,,
+RCS.MI,EU,,
+RDN,US,,
+REP.MC,EU,,
+RF,US,,
+RGS,US,,
+RHI,US,,
+RL,US,,
+RNO.PA,EU,,
+ROK,US,,
+RSG,US,,
+RTX,US,,
+RVTY,US,,
+RWE.DE,EU,,
+RYA.IR,EU,,
+SAF.PA,EU,,
+SAN.PA,EU,,
+SANM,US,,
+SAP.DE,EU,,
+SBUX,US,,
+SCHW,US,,
+SCYR.MC,EU,,
+SGO.PA,EU,,
+SIE.DE,EU,,
+SIRI,US,,
+SLB,US,,
+SNPS,US,,
+SO,US,,
+SPG,US,,
+SPGI,US,,
+SPM.MI,EU,,
+SRE,US,,
+SRG.MI,EU,,
+STERV.HE,EU,,
+STMPA.PA,EU,,
+STT,US,,
+STZ,US,,
+SU.PA,EU,,
+SVC,US,,
+SWK,US,,
+SYK,US,,
+SYY,US,,
+T,US,,
+TDW,US,,
+TEF.MC,EU,,
+TEN.MI,EU,,
+TER,US,,
+TFC,US,,
+TFI.PA,EU,,
+TGT,US,,
+THC,US,,
+TIT.MI,EU,,
+TJX,US,,
+TKA.DE,EU,,
+TKA.VI,EU,,
+TMO,US,,
+TOL,US,,
+TPR,US,,
+TROW,US,,
+TRV,US,,
+TSL.MI,EU,,
+TSN,US,,
+TTE.PA,EU,,
+TUI1.DE,EU,,
+TXN,US,,
+TXT,US,,
+UCB.BR,EU,,
+UIS,US,,
+UNH,US,,
+UNM,US,,
+UNP,US,,
+UONEK,US,,
+UPM.HE,EU,,
+UPS,US,,
+USB,US,,
+VANTI.PA,EU,,
+VIAV,US,,
+VIE.PA,EU,,
+VLO,US,,
+VMC,US,,
+VNO,US,,
+VRSN,US,,
+VTRS,US,,
+VZ,US,,
+WAT,US,,
+WFC,US,,
+WHR,US,,
+WIE.VI,EU,,
+WKL.AS,EU,,
+WM,US,,
+WMB,US,,
+WMT,US,,
+WY,US,,
+WYNN,US,,
+XEL,US,,
+XOM,US,,
+XRX,US,,
+YUM,US,,
+ZBH,US,,
+ZBRA,US,,
+ZION,US,,

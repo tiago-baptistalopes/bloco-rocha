@@ -1,7 +1,7 @@
-data/
-.ipynb_checkpoints/
-__pycache__/
-.pgpass
+*.env
 *.pgpass
 .env
-*.env
+.ipynb_checkpoints/
+.pgpass
+__pycache__/
+data/

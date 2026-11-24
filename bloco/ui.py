@@ -1,6 +1,7 @@
 import base64
 
 import streamlit as st
+import streamlit.components.v1 as components
 
 from bloco.data import FUNDS
 
@@ -112,26 +113,36 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 SCROLLSPY = """
 <script>
 (function () {
+  var w = window;
+  try { if (window.parent && window.parent.document) { w = window.parent; } } catch (e) {}
+  var doc = w.document;
   function update() {
-    var links = Array.prototype.slice.call(document.querySelectorAll('.br-bar a[data-sec]'));
+    var links = Array.prototype.slice.call(doc.querySelectorAll('.br-bar a[data-sec]'));
     var current = links.length ? links[0] : null;
     links.forEach(function (a) {
-      var el = document.getElementById(a.getAttribute('data-sec'));
+      var el = doc.getElementById(a.getAttribute('data-sec'));
       if (el && el.getBoundingClientRect().top < 160) { current = a; }
     });
-    var box = document.querySelector('[data-testid="stMain"]') || document.scrollingElement;
+    var box = doc.querySelector('[data-testid="stMain"]') || doc.scrollingElement;
     if (box && box.scrollTop + box.clientHeight >= box.scrollHeight - 4 && links.length) { current = links[links.length - 1]; }
     links.forEach(function (a) { a.classList.toggle('active', a === current); });
   }
-  if (!window.__brSpy) {
-    window.__brSpy = true;
-    document.addEventListener('scroll', update, true);
-    window.addEventListener('resize', update);
+  if (!w.__brSpy) {
+    w.__brSpy = true;
+    doc.addEventListener('scroll', update, true);
+    w.addEventListener('resize', update);
   }
   setTimeout(update, 400);
 })();
 </script>
 """
+
+
+def run_js(js):
+    try:
+        st.html(js, unsafe_allow_javascript=True)
+    except TypeError:
+        components.html(js, height=0)
 
 
 def page_setup(title, current, sections=None, sample=False):
@@ -155,7 +166,7 @@ def page_setup(title, current, sections=None, sample=False):
         links = ''.join(f'<a href="#{k}" data-sec="{k}">{v}</a>' for k, v in sections.items())
         st.html(f'<div class="br-bar"><div class="br-bar-inner">{links}</div></div>'
                 f'<style>[data-testid="stMainBlockContainer"], .block-container {{ padding-top: {NAV_H + BAR_H + 24}px !important; }}</style>')
-        st.html(SCROLLSPY, unsafe_allow_javascript=True)
+        run_js(SCROLLSPY)
     if sample:
         st.html('<div class="br-sample"><b>Sample data.</b> These figures come from simulated inputs. '
                 'Run Section 9 of the V4 notebook and commit <code>app_data/</code> to publish the backtest.</div>')

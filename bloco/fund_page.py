@@ -3,13 +3,15 @@ import pandas as pd
 import streamlit as st
 
 from bloco import data as D
-from bloco.ui import GOLD, PDF_SVG, anchor, eur, footer, kv, page_setup, pct, svg_img
+from bloco.ui import CODE_SVG, GOLD, PDF_SVG, REPO_URL, anchor, eur, footer, kv, page_setup, pct, svg_img
 
 SECTIONS = {'overview': 'Overview', 'performance': 'Performance', 'risks': 'Key Risks', 'key-facts': 'Key Facts',
             'portfolio': 'Portfolio', 'taxes': 'Taxes', 'holdings': 'Holdings', 'scenarios': 'Scenarios',
             'literature': 'Literature'}
 PDF = svg_img(PDF_SVG, 18, 22)
 PDF_BIG = svg_img(PDF_SVG, 40, 49)
+CODE = svg_img(CODE_SVG, 18, 22)
+CODE_BIG = svg_img(CODE_SVG, 40, 49)
 
 
 def chart_style(chart, height=320):
@@ -66,7 +68,8 @@ def render(fund):
 <div class="br-stat"><b>NAV total return</b><small>{last:%b %d, %Y}</small><span class="v">YTD: {pct(ytd)}</span></div>
 </div>""")
     with right:
-        st.html(f'<div class="br-docs"><a href="#literature">{PDF} Prospectus</a></div>')
+        st.html(f'<div class="br-docs"><a href="#literature">{PDF} Prospectus</a>'
+                f'<a href="{REPO_URL}" target="_blank" rel="noopener">{CODE} Repository</a></div>')
 
     anchor('overview', '')
     st.html(f"""<div class="br-grey">
@@ -226,5 +229,6 @@ returns.</p><p>Recommended holding period: <b>{hold_years} years</b></p><p>Examp
 
     anchor('literature', 'Literature')
     st.html(f'<div class="br-doc">{PDF_BIG}<span>{info["name"]}: Prospectus '
-            f'<span class="br-note">(coming soon)</span></span></div>')
+            f'<span class="br-note">(coming soon)</span></span></div>'
+            f'<a class="br-doc" href="{REPO_URL}" target="_blank" rel="noopener">{CODE_BIG}<span>Repository: code and data on GitHub</span></a>')
     footer()

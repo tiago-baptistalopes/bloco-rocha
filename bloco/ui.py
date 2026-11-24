@@ -15,6 +15,9 @@ SYMBOL_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><poly
               '<polygon points="0,35 27,42 64,29 64,64 0,64" fill="#000"/></svg>')
 PDF_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 22"><path d="M1 1h10l6 6v14H1z" fill="#000"/>'
            '<path d="M11 1v6h6z" fill="#fff"/><text x="3.2" y="18" font-family="Arial" font-weight="700" font-size="5.2" fill="#fff">PDF</text></svg>')
+CODE_SVG = ('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 22"><path d="M1 1h16v20H1z" fill="#000"/>'
+            '<path d="M7 8l-3 3 3 3M11 8l3 3-3 3" stroke="#fff" stroke-width="1.6" fill="none"/></svg>')
+REPO_URL = 'https://github.com/tiago-baptistalopes/bloco-rocha'
 
 CSS = f"""
 <style>
@@ -57,7 +60,8 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-stat {{ border-left: 2px solid #000; padding: 2px 0 2px 16px; }}
 .br-stat b {{ font-size: 15px; }} .br-stat small {{ display: block; font-size: 15px; margin: 2px 0 8px 0; }}
 .br-stat .v {{ font-size: 24px; font-weight: 800; }} .br-stat .r {{ font-size: 14px; margin-left: 6px; }}
-.br-docs a {{ display: flex; align-items: center; gap: 8px; color: #000 !important; text-decoration: none !important; font-size: 15px; margin: 34px 0 0 0; }}
+.br-docs a {{ display: flex; align-items: center; gap: 8px; color: #000 !important; text-decoration: none !important; font-size: 15px; margin: 0 0 14px 0; }}
+.br-docs {{ margin-top: 34px; }}
 .br-docs a:hover {{ text-decoration: underline !important; }}
 
 .br-h2 {{ font-weight: 800; font-size: 40px; letter-spacing: -.02em; margin: 56px 0 26px 0; line-height: 1.1; }}
@@ -83,7 +87,7 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-bars td.bar {{ width: 58%; border-left: 1px solid {RULE}; }}
 .br-bars .fill {{ height: 20px; background: #000; }}
 
-.br-doc {{ display: flex; align-items: center; gap: 14px; font-size: 22px; }}
+.br-doc {{ display: flex; align-items: center; gap: 14px; font-size: 22px; margin-bottom: 22px; color: #000 !important; text-decoration: none !important; }}
 .br-disclaimer {{ font-size: 14px; line-height: 1.5; margin-top: 70px; color: #222; }}
 .br-footer {{ background: #000; color: #fff; margin: 50px -100vw 0 -100vw; padding: 56px 100vw 70px 100vw; }}
 .br-footer-inner {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; max-width: 1220px; margin: 0 auto; }}

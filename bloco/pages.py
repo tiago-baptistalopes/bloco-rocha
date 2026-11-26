@@ -5,7 +5,6 @@ from bloco.ui import footer, page_setup, pct
 
 
 def products():
-    st.set_page_config(page_title='Products | BlocoRocha', page_icon='assets/favicon.svg', layout='wide')
     nav, holdings, securities, classes, meta = D.load()
     page_setup('Products', 'products', sample=meta.get('sample', False))
     st.html('<div class="br-h2" style="margin-top:30px">Products</div>'
@@ -27,7 +26,6 @@ def products():
 
 
 def about():
-    st.set_page_config(page_title='About us | BlocoRocha', page_icon='assets/favicon.svg', layout='wide')
     meta = D.load()[4]
     page_setup('About us', 'about', sample=False)
     st.html('<div class="br-h2" style="margin-top:30px">About us</div>'

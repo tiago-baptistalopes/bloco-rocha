@@ -23,6 +23,7 @@ REPO_URL = 'https://github.com/tiago-baptistalopes/bloco-rocha'
 CSS = f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@700;800&family=Barlow+Condensed:wght@700&display=swap');
+html, body, [data-testid="stAppViewContainer"], [data-testid="stMain"] {{ overflow-x: clip; }}
 html, body, [data-testid="stAppViewContainer"], [data-testid="stMarkdownContainer"], .stApp {{ font-family: 'Inter', Helvetica, Arial, sans-serif; color: #000; }}
 header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecoration"], #MainMenu, footer {{ display: none !important; }}
 [data-testid="stMainBlockContainer"], .block-container {{ max-width: 1280px; padding: {NAV_H + 24}px 30px 0 30px !important; }}
@@ -48,7 +49,9 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-top:has(.has-drop:hover) .br-dim {{ display: block; }}
 
 .br-bar {{ height: {BAR_H}px; background: #000; }}
-.br-bar-inner {{ max-width: 1280px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 30px; padding: 0 42px; box-sizing: border-box; }}
+.br-bar-inner {{ max-width: 1280px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 30px; padding: 0 42px; box-sizing: border-box; overflow-x: auto; scrollbar-width: none; }}
+.br-bar-inner::-webkit-scrollbar {{ display: none; }}
+.br-bar a {{ flex: 0 0 auto; }}
 .br-bar a {{ color: #fff !important; text-decoration: none !important; font-weight: 700; font-size: 16px; height: 100%; display: flex; align-items: center; border-bottom: 3px solid transparent; box-sizing: border-box; padding-top: 3px; }}
 .br-bar a.active, .br-bar a:hover {{ border-bottom-color: #fff; }}
 .br-sample {{ background: #FFF4D6; border: 1px solid {GOLD}; padding: 8px 14px; font-size: 14px; }}
@@ -85,13 +88,18 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-table td {{ padding: 15px 12px; border-bottom: 1px solid {RULE}; vertical-align: middle; }}
 .br-table tr:nth-child(even) td {{ background: {BEIGE}; }}
 .br-table .num {{ text-align: right; white-space: nowrap; }}
+.br-compact {{ table-layout: fixed; font-size: 14px; }}
+.br-compact th, .br-compact td {{ padding: 10px 5px; }}
+.br-compact .num {{ white-space: normal; }}
+.br-compact th:first-child, .br-compact td:first-child {{ width: 22%; }}
+.br-wrap {{ overflow-x: auto; max-width: 100%; }}
 .br-table tfoot td {{ border-top: 3px solid {RULE}; border-bottom: none; }}
 .br-bars td.bar {{ width: 58%; border-left: 1px solid {RULE}; }}
 .br-bars .fill {{ height: 20px; background: #000; }}
 
 .br-doc {{ display: flex; align-items: center; gap: 14px; font-size: 22px; margin-bottom: 22px; color: #000 !important; text-decoration: none !important; }}
 .br-disclaimer {{ font-size: 14px; line-height: 1.5; margin-top: 70px; color: #222; }}
-.br-footer {{ background: #000; color: #fff; margin: 50px -100vw 0 -100vw; padding: 56px 100vw 70px 100vw; }}
+.br-footer {{ background: #000; color: #fff; width: 100vw; margin: 50px 0 0 calc(50% - 50vw); padding: 56px 30px 70px 30px; box-sizing: border-box; }}
 .br-footer-inner {{ display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; max-width: 1220px; margin: 0 auto; }}
 .br-footer h5 {{ color: #fff; font-size: 20px; font-weight: 800; margin: 0 0 6px 0; padding: 0; }}
 .br-footer p, .br-footer a {{ color: #fff !important; font-size: 16px; line-height: 1.5; text-decoration: none !important; display: block; margin: 0 0 14px 0; }}
@@ -107,6 +115,12 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .st-key-perfmenu [data-testid="stRadioOption"] > div > div:first-child {{ display: none; }}
 .st-key-perfmenu [data-testid="stRadioOption"] p {{ font-size: 18px; font-weight: 800; line-height: 1.3; }}
 .st-key-perfmenu [data-testid="stRadioOption"][data-selected="true"] {{ border: 2px solid #000; border-right: none; margin-right: -2px; width: calc(100% + 2px); background: #fff; }}
+.st-key-perfmenu label[data-baseweb="radio"] {{ width: 100%; padding: 26px 22px; margin: 0; border: 2px solid transparent; box-sizing: border-box; cursor: pointer; }}
+.st-key-perfmenu label[data-baseweb="radio"] > div:first-child {{ display: none; }}
+.st-key-perfmenu label[data-baseweb="radio"] p {{ font-size: 18px; font-weight: 800; line-height: 1.3; }}
+.st-key-perfmenu label[data-baseweb="radio"]:has(input:checked) {{ border: 2px solid #000; border-right: none; margin-right: -2px; width: calc(100% + 2px); background: #fff; }}
+.st-key-perfmenu [role="radiogroup"] {{ flex-direction: column; align-items: stretch; }}
+button[data-baseweb="tab"] p {{ font-size: 19px !important; }}
 [data-testid="stTab"] p {{ font-size: 19px !important; }}
 [data-testid="stTab"] {{ padding: 0 10px 12px 10px; }}
 [data-testid="stDataFrame"] {{ border-top: 3px solid #000; }}

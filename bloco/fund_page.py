@@ -26,7 +26,7 @@ def bars(values, fund_label):
     df = values.rename_axis('index').reset_index().melt(id_vars='index', var_name='series', value_name='return')
     order = list(values.index.astype(str))
     df['index'] = df['index'].astype(str)
-    chart = alt.Chart(df).mark_bar(size=24).encode(
+    chart = alt.Chart(df).mark_bar().encode(
         x=alt.X('index:N', sort=order, title=None, axis=alt.Axis(labelAngle=0)),
         xOffset=alt.XOffset('series:N', sort=[fund_label, 'S&P 500 total return']),
         y=alt.Y('return:Q', title=None, axis=alt.Axis(format='%')),
@@ -36,13 +36,12 @@ def bars(values, fund_label):
     head = ''.join(f'<th class="num">{c}</th>' for c in values.index.astype(str))
     rows = ''.join(f'<tr><td>{name}</td>' + ''.join(f'<td class="num">{pct(v)}</td>' for v in values[name]) + '</tr>'
                    for name in values.columns)
-    st.html(f'<table class="br-table"><thead><tr><th></th>{head}</tr></thead><tbody>{rows}</tbody></table>')
+    st.html(f'<table class="br-table br-compact"><thead><tr><th></th>{head}</tr></thead><tbody>{rows}</tbody></table>')
 
 
 def render(fund):
     nav, holdings, securities, classes, meta = D.load()
     info = D.FUNDS[fund]
-    st.set_page_config(page_title=f'{info["name"]} | BlocoRocha', page_icon='assets/favicon.svg', layout='wide')
     page_setup(info['name'], 'products', SECTIONS, meta.get('sample', False))
 
     left, right = st.columns([3, 1])
@@ -238,7 +237,7 @@ returns.</p><p>Recommended holding period: <b>{hold_years} years</b></p><p>Examp
     for name, row in sc.iterrows():
         cells = ''.join(f'<td class="num"><b>{eur(val, 0)}</b><br>{pct((val / 10_000) ** (1 / t) - 1, 1)}</td>' for t, val in row.items())
         body += f'<tr><td><b>{name}</b></td><td><b>What you might get back after costs</b><br>Average return each year</td>{cells}</tr>'
-    st.html(f'<table class="br-table"><thead><tr><th>SCENARIOS</th><th></th>{head}</tr></thead><tbody>{body}</tbody></table>'
+    st.html(f'<div class="br-wrap"><table class="br-table"><thead><tr><th>SCENARIOS</th><th></th>{head}</tr></thead><tbody>{body}</tbody></table></div>'
             '<p class="br-p">The stress scenario shows what you might get back in extreme market circumstances.</p>')
 
     anchor('literature', 'Literature')

@@ -81,29 +81,31 @@ def render(fund):
     menu, body = st.columns([1, 3])
     with menu, st.container(key='perfmenu'):
         view = st.radio('View', ['Performance', 'Hypothetical growth of €10,000', 'Historical NAV'], label_visibility='collapsed')
-    label = f'{info["name"]} {cls}'
+    label = f'{info["name"]} (before fees)'
+    years = (level.index - level.index[0]).days / 365.25
+    before_fees = level / (1 - fee['management fee']) ** years
     with body:
         if view == 'Performance':
             tabs = st.tabs(['Calendar year', 'Annual', 'Average annual', 'Cumulative'])
-            texts = ['the share class return in each of the last 10 calendar years',
-                     'the share class return over each of the last five 12-month periods ending at the latest quarter end',
-                     'the annualized share class return over standard periods ending at the latest month end',
-                     'the total share class return over standard periods ending at the latest month end']
+            texts = ['the fund return in each of the last 10 calendar years',
+                     'the fund return over each of the last five 12-month periods ending at the latest quarter end',
+                     'the annualized fund return over standard periods ending at the latest month end',
+                     'the total fund return over standard periods ending at the latest month end']
             makers = [D.calendar_years, D.annual_periods, D.average_annual, D.cumulative]
             for tab, text, make in zip(tabs, texts, makers):
                 with tab:
-                    st.html(f'<p class="br-p"><b>This chart shows {text}, against the S&amp;P 500 total return. Returns are net of '
-                            f'management fees and transaction costs and exclude entry and exit fees.</b></p>')
-                    bars(pd.DataFrame({label: make(level), 'S&P 500 total return': make(bench)}), label)
+                    st.html(f'<p class="br-p"><b>This chart shows {text}, against the S&amp;P 500 total return. Returns are before '
+                            f'all fees (entry, management and exit) and after transaction costs.</b></p>')
+                    bars(pd.DataFrame({label: make(before_fees), 'S&P 500 total return': make(bench)}), label)
         elif view == 'Hypothetical growth of €10,000':
-            growth = pd.DataFrame({label: level * 10_000, 'S&P 500 total return': bench * 10_000}).resample('W').last()
+            growth = pd.DataFrame({label: before_fees * 10_000, 'S&P 500 total return': bench * 10_000}).resample('W').last()
             df = growth.reset_index(names='date').melt(id_vars='date', var_name='series', value_name='value')
             chart = alt.Chart(df).mark_line(strokeWidth=2).encode(
                 x=alt.X('date:T', title=None, axis=alt.Axis(format='%Y', labelAngle=0, tickCount='year', labelOverlap=True)),
                 y=alt.Y('value:Q', title=None, axis=alt.Axis(format=',.0f')),
                 color=alt.Color('series:N', scale=alt.Scale(domain=[label, 'S&P 500 total return'], range=['#000000', GOLD])),
                 tooltip=[alt.Tooltip('date:T'), alt.Tooltip('series:N', title=' '), alt.Tooltip('value:Q', title='Value (EUR)', format=',.0f')])
-            st.html(f'<p class="br-p"><b>Value of €10,000 invested at launch on {level.index[0]:%b %d, %Y}, before entry and exit fees.</b></p>')
+            st.html(f'<p class="br-p"><b>Value of €10,000 invested at launch on {level.index[0]:%b %d, %Y}, before fees and after transaction costs.</b></p>')
             st.altair_chart(chart_style(chart, 380), use_container_width=True)
         else:
             m = ps.resample('ME').last()

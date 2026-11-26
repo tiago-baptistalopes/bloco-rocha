@@ -139,6 +139,8 @@ used before its publication date. Real results would likely have been lower.</p>
     latest = holdings[(holdings['fund'] == fund) & (holdings['date'] == holdings.loc[holdings['fund'] == fund, 'date'].max())]
     hold_years = meta.get('hold_years', 20)
     st.html('<div class="br-facts">' + kv([
+        ('Total net assets', eur(D.SHARES_OUTSTANDING * ps.iloc[-1], 0), f'as of {last:%b %d, %Y}'),
+        ('Shares outstanding', f'{D.SHARES_OUTSTANDING:,}', f'€{D.LAUNCH_ASSETS / 1e6:,.0f} million at launch'),
         ('Fund launch date', f'{pd.Timestamp(meta["fund_launch"]):%b %d, %Y}', None),
         ('Share class currency', 'EUR', None),
         ('Asset class', 'Equity', None),

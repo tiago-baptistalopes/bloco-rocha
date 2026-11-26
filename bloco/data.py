@@ -6,7 +6,9 @@ import pandas as pd
 import streamlit as st
 
 APP_DATA = Path(__file__).resolve().parent.parent / 'app_data'
-NAV_START = 10.0
+LAUNCH_ASSETS = 100_000_000
+SHARES_OUTSTANDING = 10_000_000
+NAV_START = LAUNCH_ASSETS / SHARES_OUTSTANDING
 BENCHMARK = 'sp500'
 
 FUNDS = {

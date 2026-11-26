@@ -138,16 +138,16 @@ used before its publication date. Real results would likely have been lower.</p>
     v = D.vev(level)
     latest = holdings[(holdings['fund'] == fund) & (holdings['date'] == holdings.loc[holdings['fund'] == fund, 'date'].max())]
     hold_years = meta.get('hold_years', 20)
+    fees = [(label, pct(fee[col], d), None) for label, col, d in
+            (('Entry fee', 'entry fee', 2), ('Management fee (per year)', 'management fee', 3), ('Exit fee', 'exit fee', 2))
+            if fee[col] > 0]
     st.html('<div class="br-facts">' + kv([
         ('Total net assets', eur(D.SHARES_OUTSTANDING * ps.iloc[-1], 0), f'as of {last:%b %d, %Y}'),
-        ('Shares outstanding', f'{D.SHARES_OUTSTANDING:,}', f'€{D.LAUNCH_ASSETS / 1e6:,.0f} million at launch'),
         ('Fund launch date', f'{pd.Timestamp(meta["fund_launch"]):%b %d, %Y}', None),
         ('Share class currency', 'EUR', None),
         ('Asset class', 'Equity', None),
         ('Summary Risk Indicator', f'{D.sri(v)} of 7', f'volatility equivalent {pct(v, 1)}'),
-        ('Entry fee', pct(fee['entry fee']), None),
-        ('Management fee (per year)', pct(fee['management fee'], 3), None),
-        ('Exit fee', pct(fee['exit fee']), None),
+    ] + fees + [
         ('Use of income', 'Accumulating', None),
     ]) + kv([
         ('Base currency', 'EUR', None),

@@ -188,7 +188,7 @@ used before its publication date. Real results would likely have been lower.</p>
             ('Capital gain', eur(gross_value - invested, 0), None),
             ('Capital gains tax', eur(tax, 0), f'effective rate {pct(tax / max(gross_value - invested, 1e-9), 1)}'),
             ('Value after tax', eur(after, 0), f'{pct((after / invested) ** (1 / hold_years) - 1)} a year'),
-        ]) + f'<p class="br-note">{D.TAX[country]["note"]} Rates as of 2026, applied to the whole gain at redemption. '
+        ]) + f'<p class="br-note" style="margin-top: 20px">{D.TAX[country]["note"]} Rates as of 2026, applied to the whole gain at redemption. '
              f'Illustrative only; not tax advice.</p>')
 
     anchor('holdings', 'Holdings')

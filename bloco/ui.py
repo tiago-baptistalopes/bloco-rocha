@@ -28,7 +28,8 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 [data-testid="stMainBlockContainer"], .block-container {{ max-width: 1280px; padding: {NAV_H + 24}px 30px 0 30px !important; }}
 [data-testid="stVerticalBlock"] {{ gap: 0.75rem; }}
 
-.br-nav {{ position: fixed; top: 0; left: 0; right: 0; height: {NAV_H - 4}px; background: #fff; border-bottom: 4px solid {RULE}; z-index: 1000; }}
+.br-top {{ position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }}
+.br-nav {{ position: relative; height: {NAV_H}px; background: #fff; border-bottom: 4px solid {RULE}; box-sizing: border-box; }}
 .br-nav-inner {{ max-width: 1280px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 48px; padding: 0 30px; box-sizing: border-box; }}
 .br-logo {{ display: flex; align-items: center; gap: 10px; text-decoration: none !important; color: #000 !important; }}
 .br-logo span {{ font-family: 'Inter Tight', Inter, sans-serif; font-weight: 800; font-size: 27px; letter-spacing: -0.045em; }}
@@ -36,7 +37,7 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-item {{ position: relative; height: 100%; display: flex; align-items: center; }}
 .br-item > a {{ font-weight: 700; font-size: 17px; color: #000 !important; text-decoration: none !important; height: 100%; display: flex; align-items: center; }}
 .br-item > a::after {{ content: ''; position: absolute; left: 0; right: 0; bottom: -4px; height: 4px; background: {ORANGE}; transform: scaleX(0); transition: transform .15s; }}
-.br-item:hover > a::after, .br-item.current > a::after {{ transform: scaleX(1); }}
+.br-item:hover > a::after {{ transform: scaleX(1); }}
 .br-drop {{ display: none; position: fixed; top: {NAV_H}px; left: 0; right: 0; background: #fff; z-index: 1001; }}
 .br-drop-inner {{ max-width: 1280px; margin: 0 auto; padding: 28px 30px 34px 236px; box-sizing: border-box; }}
 .br-drop h6 {{ font-size: 13px; font-weight: 800; letter-spacing: .08em; margin: 0 0 14px 0; padding: 0; color: #000; }}
@@ -44,9 +45,9 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 .br-drop a:hover {{ text-decoration: underline !important; }}
 .br-item.has-drop:hover .br-drop {{ display: block; }}
 .br-dim {{ display: none; position: fixed; top: {NAV_H}px; left: 0; right: 0; bottom: 0; background: rgba(30, 30, 30, .45); z-index: 999; pointer-events: none; }}
-.br-nav:has(.has-drop:hover) .br-dim {{ display: block; }}
+.br-top:has(.has-drop:hover) .br-dim {{ display: block; }}
 
-.br-bar {{ position: fixed; top: {NAV_H}px; left: 0; right: 0; height: {BAR_H}px; background: #000; z-index: 900; }}
+.br-bar {{ height: {BAR_H}px; background: #000; }}
 .br-bar-inner {{ max-width: 1280px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 30px; padding: 0 42px; box-sizing: border-box; }}
 .br-bar a {{ color: #fff !important; text-decoration: none !important; font-weight: 700; font-size: 16px; height: 100%; display: flex; align-items: center; border-bottom: 3px solid transparent; box-sizing: border-box; padding-top: 3px; }}
 .br-bar a.active, .br-bar a:hover {{ border-bottom-color: #fff; }}
@@ -97,6 +98,8 @@ header[data-testid="stHeader"], [data-testid="stToolbar"], [data-testid="stDecor
 
 .st-key-cls [data-baseweb="select"] > div {{ background: {BEIGE}; border: 1px solid #9b9a97; border-radius: 0; min-height: 54px; font-size: 16px; }}
 .st-key-cls {{ max-width: 380px; }}
+.st-key-cls input {{ caret-color: transparent; cursor: pointer; }}
+.st-key-cls [data-baseweb="select"] > div {{ cursor: pointer; }}
 .st-key-perfmenu [data-testid="stElementContainer"], .st-key-perfmenu [data-testid="stRadio"] {{ width: 100% !important; }}
 .st-key-perfmenu [role="radiogroup"] {{ gap: 0 !important; border-right: 2px solid #000; width: 100%; }}
 .st-key-perfmenu [role="radiogroup"] > div {{ width: 100%; }}
@@ -138,6 +141,28 @@ SCROLLSPY = """
 """
 
 
+READONLY_SELECT = """
+<script>
+(function () {
+  var w = window;
+  try { if (window.parent && window.parent.document) { w = window.parent; } } catch (e) {}
+  var doc = w.document;
+  function lock() {
+    doc.querySelectorAll('.st-key-cls input').forEach(function (i) {
+      i.setAttribute('readonly', 'readonly');
+      i.setAttribute('inputmode', 'none');
+    });
+  }
+  lock();
+  if (!w.__brReadonly) {
+    w.__brReadonly = true;
+    new w.MutationObserver(lock).observe(doc.body, { childList: true, subtree: true });
+  }
+})();
+</script>
+"""
+
+
 def run_js(js):
     try:
         st.html(js, unsafe_allow_javascript=True)
@@ -148,24 +173,28 @@ def run_js(js):
 def page_setup(title, current, sections=None, sample=False):
     st.html(CSS)
     funds = ''.join(f'<a href="/{f["path"]}">{f["name"]}</a>' for f in FUNDS.values())
-    cur = lambda k: ' current' if current == k else ''
+    bar = ''
+    if sections:
+        links = ''.join(f'<a href="#{k}" data-sec="{k}">{v}</a>' for k, v in sections.items())
+        bar = f'<div class="br-bar"><div class="br-bar-inner">{links}</div></div>'
     st.html(f"""
-<div class="br-nav">
-  <div class="br-nav-inner">
-    <a class="br-logo" href="/">{svg_img(SYMBOL_SVG, 30, 30)}<span>BlocoRocha</span></a>
-    <div class="br-menu">
-      <div class="br-item has-drop{cur('products')}"><a href="/">Products</a>
-        <div class="br-drop"><div class="br-drop-inner"><h6>OUR FUNDS</h6>{funds}</div></div>
+<div class="br-top">
+  <div class="br-nav">
+    <div class="br-nav-inner">
+      <a class="br-logo" href="/">{svg_img(SYMBOL_SVG, 30, 30)}<span>BlocoRocha</span></a>
+      <div class="br-menu">
+        <div class="br-item has-drop"><a href="/">Products</a>
+          <div class="br-drop"><div class="br-drop-inner"><h6>OUR FUNDS</h6>{funds}</div></div>
+        </div>
+        <div class="br-item"><a href="/about-us">About us</a></div>
       </div>
-      <div class="br-item{cur('about')}"><a href="/about-us">About us</a></div>
     </div>
   </div>
+  {bar}
   <div class="br-dim"></div>
 </div>""")
     if sections:
-        links = ''.join(f'<a href="#{k}" data-sec="{k}">{v}</a>' for k, v in sections.items())
-        st.html(f'<div class="br-bar"><div class="br-bar-inner">{links}</div></div>'
-                f'<style>[data-testid="stMainBlockContainer"], .block-container {{ padding-top: {NAV_H + BAR_H + 24}px !important; }}</style>')
+        st.html(f'<style>[data-testid="stMainBlockContainer"], .block-container {{ padding-top: {NAV_H + BAR_H + 24}px !important; }}</style>')
         run_js(SCROLLSPY)
     if sample:
         st.html('<div class="br-sample"><b>Sample data.</b> These figures come from simulated inputs. '
@@ -197,7 +226,7 @@ comparison only.</p>
   <div><h5>BlocoRocha</h5><p>A student-built asset manager. We design rules-based equity funds for long-term European investors
   and test them openly against the data.</p></div>
   <div><h5>Corporate</h5><a href="/about-us">About us</a></div>
-  <div><h5>Legal</h5><a href="#">Educational project</a><a href="#">Data sources</a></div>
+  <div><h5>Legal</h5><a href="/about-us#data-sources">Data sources</a></div>
 </div></div>""")
 
 

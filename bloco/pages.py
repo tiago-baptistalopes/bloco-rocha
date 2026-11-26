@@ -32,5 +32,12 @@ def about():
     page_setup('About us', 'about', sample=False)
     st.html('<div class="br-h2" style="margin-top:30px">About us</div>'
             '<div class="br-cond" style="margin-top:10px">Our team</div>'
-            '<p class="br-p">A description of the BlocoRocha team will be added here.</p>')
+            '<p class="br-p">A description of the BlocoRocha team will be added here.</p>'
+            '<div id="data-sources" class="br-anchor"><div class="br-cond" style="margin-top:40px">Data sources</div></div>'
+            '<div class="br-p"><p><b>Prices and exchange rates:</b> Yahoo Finance, via the yfinance library.</p>'
+            '<p><b>Company fundamentals</b> (book equity, debt, shares outstanding): Compustat North America and Compustat Global, '
+            'S&amp;P Global Market Intelligence, via Wharton Research Data Services.</p>'
+            '<p><b>Company names, sectors and industries:</b> Yahoo Finance.</p>'
+            '<p><b>Risk-free rate:</b> 12-month EURIBOR, European Central Bank Data Portal.</p>'
+            '<p><b>Benchmark:</b> S&amp;P 500 Total Return index, S&amp;P Dow Jones Indices, via Yahoo Finance.</p></div>')
     footer()

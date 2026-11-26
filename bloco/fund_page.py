@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 from bloco import data as D
-from bloco.ui import CODE_SVG, GOLD, PDF_SVG, REPO_URL, anchor, eur, footer, kv, page_setup, pct, svg_img
+from bloco.ui import CODE_SVG, GOLD, PDF_SVG, READONLY_SELECT, REPO_URL, anchor, run_js, eur, footer, kv, page_setup, pct, svg_img
 
 SECTIONS = {'overview': 'Overview', 'performance': 'Performance', 'risks': 'Key Risks', 'key-facts': 'Key Facts',
             'portfolio': 'Portfolio', 'taxes': 'Taxes', 'holdings': 'Holdings', 'scenarios': 'Scenarios',
@@ -15,7 +15,7 @@ CODE_BIG = svg_img(CODE_SVG, 40, 49)
 
 
 def chart_style(chart, height=320):
-    return (chart.properties(height=height)
+    return (chart.properties(height=height, padding={'left': 5, 'right': 10, 'top': 5, 'bottom': 25})
             .configure_axis(labelFont='Inter', titleFont='Inter', labelFontSize=13, titleFontSize=13, gridDash=[3, 3],
                             gridColor='#BDBDBD', domainColor='#9B9A97', tickColor='#9B9A97', labelColor='#333')
             .configure_legend(labelFont='Inter', labelFontSize=13, orient='top', symbolType='circle', title=None, labelLimit=0)
@@ -51,6 +51,7 @@ def render(fund):
                 f'<div class="br-fund">{info["name"]}</div></div>')
         with st.container(key='cls'):
             cls = st.selectbox('Share class', list(D.CLASS_LABELS), format_func=D.CLASS_LABELS.get, label_visibility='collapsed')
+        run_js(READONLY_SELECT)
     level = D.series(nav, fund, cls)
     bench = nav[D.BENCHMARK]
     fee = classes.loc[cls]
@@ -98,17 +99,28 @@ def render(fund):
             growth = pd.DataFrame({label: level * 10_000, 'S&P 500 total return': bench * 10_000}).resample('W').last()
             df = growth.reset_index(names='date').melt(id_vars='date', var_name='series', value_name='value')
             chart = alt.Chart(df).mark_line(strokeWidth=2).encode(
-                x=alt.X('date:T', title=None), y=alt.Y('value:Q', title=None, axis=alt.Axis(format=',.0f')),
+                x=alt.X('date:T', title=None, axis=alt.Axis(format='%Y', labelAngle=0, tickCount='year', labelOverlap=True)),
+                y=alt.Y('value:Q', title=None, axis=alt.Axis(format=',.0f')),
                 color=alt.Color('series:N', scale=alt.Scale(domain=[label, 'S&P 500 total return'], range=['#000000', GOLD])),
-                tooltip=[alt.Tooltip('date:T'), alt.Tooltip('series:N', title=' '), alt.Tooltip('value:Q', format='€,.0f')])
+                tooltip=[alt.Tooltip('date:T'), alt.Tooltip('series:N', title=' '), alt.Tooltip('value:Q', title='Value (EUR)', format=',.0f')])
             st.html(f'<p class="br-p"><b>Value of €10,000 invested at launch on {level.index[0]:%b %d, %Y}, before entry and exit fees.</b></p>')
             st.altair_chart(chart_style(chart, 380), use_container_width=True)
         else:
-            m = ps.resample('ME').last().iloc[::-1]
-            st.dataframe(pd.DataFrame({'Month end': m.index.strftime('%b %Y'), 'NAV (EUR)': m.values.round(2),
-                                       'Monthly return': (m / m.shift(-1) - 1).values}),
-                         hide_index=True, height=420,
-                         column_config={'Monthly return': st.column_config.NumberColumn(format='percent')})
+            m = ps.resample('ME').last()
+            if st.toggle('Show as chart', key='nav_chart'):
+                df = pd.DataFrame({'date': m.index, 'NAV (EUR)': m.values})
+                chart = alt.Chart(df).mark_line(strokeWidth=2, color='#000000').encode(
+                    x=alt.X('date:T', title=None, axis=alt.Axis(format='%Y', labelAngle=0, tickCount='year', labelOverlap=True)),
+                    y=alt.Y('NAV (EUR):Q', title=None, axis=alt.Axis(format=',.2f')),
+                    tooltip=[alt.Tooltip('date:T', title='Month end', format='%b %Y'), alt.Tooltip('NAV (EUR):Q', format=',.2f')])
+                st.html(f'<p class="br-p"><b>Month-end net asset value per {cls} share, in euros.</b></p>')
+                st.altair_chart(chart_style(chart, 380), use_container_width=True)
+            else:
+                m = m.iloc[::-1]
+                st.dataframe(pd.DataFrame({'Month end': m.index.strftime('%b %Y'), 'NAV (EUR)': m.values.round(2),
+                                           'Monthly return': (m / m.shift(-1) - 1).values}),
+                             hide_index=True, height=420,
+                             column_config={'Monthly return': st.column_config.NumberColumn(format='percent')})
 
     anchor('risks', 'Key Risks')
     st.html("""<div class="br-p">
